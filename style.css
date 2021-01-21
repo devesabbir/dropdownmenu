@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.midwidth {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+
+.header {}
+
+.headerbg {
+    background: #000000;
+    padding: 35px 0px;
+}
+
+.headerbg .menu {
+    text-align: center;
+}
+
+.headerbg .menu ul {
+    list-style: none;
+}
+
+.headerbg .menu ul li {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.headerbg .menu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    color: antiquewhite;
+    transition: .4s;
+    padding: 12px 30px;
+}
+
+.headerbg .menu ul li a:hover {
+    color: #da1111;
+}
+
+/* DropDown Part */
+.headerbg .menu ul li {
+    position: relative;
+}
+
+.headerbg .menu ul li ul {
+    position: absolute;
+    top: 175%;
+    left: -2px;
+    width: 320px;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: .4s;
+}
+
+.headerbg .menu ul li ul li {
+    display: block;
+}
+
+.headerbg .menu ul li ul li a {
+    display: block;
+    background: #000;
+    padding: 17px 0px;
+
+    transition: .3s;
+}
+
+.headerbg .menu ul li:hover>a {
+    background: #4272D7;
+    color: white;
+}
+
+.headerbg .menu ul li ul li:first-child a {
+    border-top: 6px solid #4272D7;
+}
+
+.headerbg .menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+
+.headerbg .menu ul li ul li {
+    position: relative;
+}
+
+.headerbg .menu ul li ul li ul {
+    position: absolute;
+    top: -6px;
+    left: 100%;
+    width: 313px;
+    list-style: none;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: scaleX(0) !important;
+    transform-origin: left center;
+    transition: .4s;
+
+}
+
+.headerbg .menu ul li ul li:hover ul {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: scaleX(1) !important;
+}
+
+.headerbg .menu ul li ul.contactdrop {
+    width: 200px;
+}
+
+.headerbg .menu ul li ul.contactdrop li {
+    position: relative;
+
+}
+
+.headerbg .menu ul li ul.contactdrop li ul {
+    position: absolute;
+    top: 0px;
+    left: -168px;
+    width: 164px;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(1);
+    transform-origin: right center;
+    transition: .4s;
+}
+
+.headerbg .menu ul li ul.contactdrop li ul li a {
+    border: none;
+
+}
+
+.headerbg .menu ul li ul.contactdrop li ul li:first-child a {
+    border-top: 6px solid #4272D7;
+}
+
+
+
+/* Banner Part */
+
+.banner {
+    background: url(https://i.ibb.co/8cg1fLT/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 250px 24px;
+}
+
+.slider-text {
+    text-align: center;
+}
+
+.slider-text h1 {
+    background: #fff;
+    display: inline-block;
+    padding: 17px 50px;
+}
+
+.slider-text h4 {
+    background: #fff;
+    margin-top: 15px;
+    padding: 0px 0px;
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.slider-text a {
+    background: #000;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 11px 12px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 14px;
+    transition: .5s;
+}
+
+.slider-text a:hover {
+    color: cyan;
+}
+
+
+
+/* Footer */
+
+.footerbg {
+    background-color: black;
+    text-align: center;
+    padding: 18px 0px;
+}
+
+.footerbg h4 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 27px;
+}
+
+.social-menu {}
+
+.social-menu ul {
+    list-style: none;
+}
+
+.social-menu ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.social-menu ul li a {
+    display: inline-block;
+    font-size: 23px;
+    background: #5EA5FA;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.social-menu ul li a:hover {
+    color: white;
+    background-color: blue;
+}
