@@ -13,11 +13,12 @@
 }
 
 
-
+.header {}
 
 .headerbg {
     background: #000000;
     padding: 35px 0px;
+    position: relative;
 }
 
 .headerbg .menu {
@@ -26,6 +27,7 @@
 
 .headerbg .menu ul {
     list-style: none;
+   
 }
 
 .headerbg .menu ul li {
@@ -37,7 +39,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    color: antiquewhite;
+    color: snow;
     transition: .4s;
     padding: 12px 30px;
 }
@@ -76,13 +78,18 @@
     transition: .3s;
 }
 
-.headerbg .menu ul li:hover>a {
-    background: #4272D7;
-    color: white;
+.headerbg .menu ul li:hover > a {
+    background: snow;
+    color: black;
 }
 
 .headerbg .menu ul li ul li:first-child a {
-    border-top: 6px solid #4272D7;
+    border-top: 6px solid snow;
+}
+
+.headerbg .menu ul li ul li:last-child a {
+
+    border-bottom: 6px solid snow;
 }
 
 .headerbg .menu ul li:hover ul {
@@ -93,7 +100,7 @@
 
 
 .headerbg .menu ul li ul li {
-    position: relative;
+    
 }
 
 .headerbg .menu ul li ul li ul {
@@ -144,10 +151,38 @@
 }
 
 .headerbg .menu ul li ul.contactdrop li ul li:first-child a {
-    border-top: 6px solid #4272D7;
+    border-top: 6px solid snow;
+}
+
+.headerbg .menu ul li ul.contactdrop li ul li:last-child a {
+    
+    border-bottom: 6px solid snow;
 }
 
 
+.headerbg .menu ul li ul li ul.menu5 li a{
+    border-bottom: none;
+
+}
+
+.headerbg .menu ul li ul li ul.menu5 li:last-child{
+    border-bottom: 6px solid snow;
+}
+
+
+.menu{
+    position: relative;
+}
+.menu::after{
+    content: '';
+    height: 1px;
+    width: 78%;
+    background-color: snow;
+    position: absolute;
+    left: 125px;
+    bottom: -1px;
+
+}
 
 /* Banner Part */
 
@@ -191,8 +226,8 @@
 }
 
 .slider-text a:hover {
-    color: snow;
-    background: #4272D7;
+    color: black;
+    background: aliceblue;
 }
 
 
@@ -211,7 +246,7 @@
     margin-bottom: 27px;
 }
 
-
+.social-menu {}
 
 .social-menu ul {
     list-style: none;
@@ -225,8 +260,8 @@
 .social-menu ul li a {
     display: inline-block;
     font-size: 23px;
-    background: azure;
-    color: #000;
+    background: black;
+    color: snow;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -235,6 +270,6 @@
 }
 
 .social-menu ul li a:hover {
-    color: white;
-    background-color: #4272D7;
+    color: black;
+    background-color: snow;
 }
